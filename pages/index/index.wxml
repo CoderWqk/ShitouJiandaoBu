@@ -1,0 +1,36 @@
+<!--index.wxml-->
+<view class="container">
+
+
+  <view class="win">你已经获胜了<text>{{totalWin}}</text>次</view>
+
+
+  <view class="game-result">
+    <view class="computer">
+      <image src="{{imgSrc[currentSelect]}}" mode="widthFix"></image>
+    </view>
+    <view class="result">
+      <view>0.0~</view>
+      <view>{{isWin}}</view>
+    </view>
+    <!-- <view class="result" /> -->
+    <view class="player">
+      <image src="{{imgSrc[currentIndex]}}" mode="widthFix"></image>
+    </view>
+  </view>
+
+  <view class="game-area">
+    <view class="text">出招吧，少年~</view>
+    <view class="select">
+      <block wx:for="{{imgSrc}}" wx:key="index">
+        <view bindtap="handPlayerSelect" data-index="{{index}}">
+          <image src="{{item}}" mode="widthFix" />
+        </view>
+      </block>
+    </view>
+    <button class="btn" bindtap="startGame" wx:if="{{!isBegin}}">开始</button>
+    <button class="btn" bindtap="endGame" wx:else>出招！</button>
+  </view>
+
+
+</view>

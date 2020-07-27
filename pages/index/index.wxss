@@ -1,0 +1,75 @@
+/**index.wxss**/
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to top, #fff5a9 , yellow);
+}
+
+
+.win {
+  display: flex;
+  justify-content: center;
+  padding: 32rpx 0;
+}
+.win > text {
+  color: red;
+}
+.game-result {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  padding-bottom: 48rpx;
+}
+.computer, .player {
+  width: 200rpx;
+  height: 200rpx;
+  background-color: #e6e6ee;
+}
+.computer > image, .player > image {
+  width: 200rpx;
+  height: 200rpx;
+}
+.result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 200rpx;
+  height: 200rpx;
+}
+
+
+.game-area {
+  width: 80vw;
+  height: 60vh;
+  margin: 0 auto;
+  background-color: #fdfdfd;
+}
+.game-area > .text {
+  text-align: center;
+  margin: 24rpx 0;
+}
+.select {
+  display: flex;
+  justify-content: space-between;
+  margin: 48rpx;
+}
+.select > view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  background-color: #e6e6ee;
+}
+.select > view > image {
+  width: 80%;
+}
+.btn {
+  width: 60%;
+  background-color: #fde639;
+  border: 2rpx solid #e6e6ee;
+  border-radius: 12rpx;
+}
